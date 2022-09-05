@@ -1,0 +1,144 @@
+    body {
+        background-color: black;
+    }
+    
+    .head {
+        background-color: red;
+        text-align: center;
+        margin: 50px 100px;
+        border-radius: 1rem;
+        justify-content: center;
+        height: 40px;
+    }
+    
+    h1 {
+        color: white;
+        position: relative;
+        animation-name: example;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes example {
+        0% {
+            left: -150px;
+            color: rgb(136, 255, 0);
+        }
+        25% {
+            left: 150px;
+            color: turquoise;
+        }
+        50% {
+            left: -150px;
+            color: lightpink;
+        }
+        75% {
+            left: 150px;
+            color: gold;
+        }
+        100% {
+            left: -150px;
+            color: silver;
+        }
+    }
+    
+    .formstyle {
+        position: absolute;
+        text-align: center;
+        margin: 0px 450px;
+        border: 1px solid skyblue;
+        height: 400px;
+        width: 300px;
+        background-color: gray;
+        border-radius: 1.5rem;
+    }
+    
+    .textview {
+        /* float: right; */
+        margin: 20px;
+        height: 50px;
+        width: 80%;
+        background-color: chartreuse;
+        font-size: 30px;
+    }
+    
+    .btn {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        margin: 2px;
+        cursor: pointer;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+    }
+    
+    .btn:hover {
+        background-color: tomato;
+    }
+    /* input:hover {
+    background-color: rgb(251, 255, 22);
+} */
+    
+    table {
+        padding: 2px;
+    }
+    
+    @media screen and (min-width:200px) and (max-width:900px) {
+        .head {
+            /* display: flex; */
+            height: 50px;
+            width: 250px;
+            margin: 10px 5px;
+        }
+        h1 {
+            /* float: left; */
+            font-size: 20px;
+            color: white;
+            position: relative;
+            animation-name: example;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        .formstyle {
+            /* margin-left: 100px; */
+            height: 250px;
+            width: 200px;
+            /* text-align: center; */
+            margin: 30px;
+        }
+        .textview {
+            height: 20px;
+            margin: 5px;
+            font-size: 15px;
+        }
+        .btn {
+            /* border-radius: 0rem; */
+            width: 35px;
+            height: 30px;
+            font-size: 10px;
+            margin: 0px;
+        }
+        @keyframes example {
+            0% {
+                /* left: -150px; */
+                color: rgb(136, 255, 0);
+            }
+            25% {
+                /* left: 0px; */
+                color: turquoise;
+            }
+            50% {
+                /* left: -150px; */
+                color: lightpink;
+            }
+            75% {
+                /* left: 0px; */
+                color: gold;
+            }
+            100% {
+                /* left: -150px; */
+                color: silver;
+            }
+        }
+    }
