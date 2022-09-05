@@ -94,6 +94,7 @@
             margin: 10px 5px;
         }
         h1 {
+             padding-top: 13px;
             /* float: left; */
             font-size: 20px;
             color: white;
